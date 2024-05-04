@@ -71,7 +71,7 @@ footer p {
     color: white;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
     .menu-desktop {
         display: none;
     }    
