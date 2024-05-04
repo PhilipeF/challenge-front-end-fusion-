@@ -1,0 +1,87 @@
+/* Estilização do Menu Hamburger - Mobile */
+.menu-mobile {
+  background-color: #00000099;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  color: #e1e1e6;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.menu-mobile ul li {
+  display: block;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.menu-mobile ul.menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-mobile ul li:hover {
+  text-decoration: underline;
+}
+
+#btn-menu-mobile {
+  width: 30px;
+  height: 26px;
+  border: 2px solid #5c5c5c;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  display: none;
+}
+
+.linha {
+  width: 20px;
+  height: 2px;
+  border: 1px solid #5c5c5c;
+  background: #5c5c5c;
+  display: block;
+  margin: 3px auto;
+  position: relative;
+}
+
+#btn-menu-mobile.ativar .linha:nth-child(1) {
+  transform: translateY(2px) rotate(-45deg);
+  background-color: red;
+  border: 1px solid red;
+}
+
+#btn-menu-mobile.ativar .linha:nth-child(2) {
+  display: none;
+}
+
+#btn-menu-mobile.ativar .linha:nth-child(3) {
+  transform: translateY(-3px) rotate(40deg);
+  background-color: red;
+  border: 1px solid red;
+}
+
+#btn-menu-mobile.ativar {
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 120px);
+  }
+
+  #btn-menu-mobile {
+    display: block;
+  }
+}

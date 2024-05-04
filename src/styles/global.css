@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #121214;
+    color: #E1E1E6;
+    font-size: 1.8rem;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #7eccbb;
+    margin-bottom: 3rem;
+}
+
+main #about, #project, #certificates, #talkToMe {
+    padding: 2.5rem 4%;
+}
+
+/* Footer da pagina */
+footer {
+    height: 5rem;
+    border-top: 1px solid #5c5c5c;
+    padding: 2rem;
+}
+
+footer p {
+    text-align: end;
+    font-size: 1.2rem;
+}
+
+/* Botão padrão da projeto */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: transparent;
+    
+    width: fit-content;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid rgb(141, 141, 153);
+    border-radius: 0.8rem;
+}
+
+.btn:hover {
+    border: 1px solid white;
+}
+
+.btn a {
+    font-size: 2rem;
+    color: #E1E1E6;
+    text-decoration: none;    
+}
+
+.btn a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 320px) {
+    .menu-desktop {
+        display: none;
+    }    
+}
