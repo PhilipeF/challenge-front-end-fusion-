@@ -71,7 +71,7 @@
   border: 2px solid red;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .menu-mobile {
     display: block;
   }

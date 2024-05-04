@@ -45,7 +45,7 @@ main #home {
     gap: 1rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     main #home {
         flex-direction: column;
         align-items: center;
