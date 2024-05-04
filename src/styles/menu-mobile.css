@@ -78,7 +78,7 @@
 
   .menu-mobile.abrir {
     visibility: visible;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
   }
 
   #btn-menu-mobile {
